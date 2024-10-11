@@ -1,2 +1,3 @@
 # MarcoVAScript
-An appointment at the VA can take forever sometimes, this is a script about it, I want to make it into a game or add to my game if I can.
+An appointment at the VA can take forever sometimes, this is a script about it, I want to make it into a game or add to my own game if I can.
+def log_appointment_attempt(name, date, notes): with open("appointment_log.txt", "a") as log_file: log_file.write(f"Name: {name}, Date: {date}, Notes: {notes}\n") def main(): print("Dental Appointment Logging System") name = input("Enter your name: ") date = input("Enter the date of the attempt (YYYY-MM-DD): ") notes = input("Enter any notes regarding the appointment attempt: ") log_appointment_attempt(name, date, notes) print("Your attempt has been logged.") if __name__ == "__main__": main()
